@@ -1,5 +1,6 @@
 #pragma warning disable 1591
 
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -19,7 +20,7 @@ namespace Braintree
         public static readonly TransactionGatewayRejectionReason[] ALL = {
             APPLICATION_INCOMPLETE, AVS, AVS_AND_CVV, CVV, DUPLICATE, FRAUD, THREE_D_SECURE, UNRECOGNIZED
         };
-
+        [JsonConstructor]
         protected TransactionGatewayRejectionReason(string name) : base(name) {}
     }
 
@@ -35,7 +36,7 @@ namespace Braintree
         public static readonly TransactionEscrowStatus[] ALL = {
             HELD, HOLD_PENDING, RELEASE_PENDING, RELEASED, REFUNDED, UNRECOGNIZED
         };
-
+        [JsonConstructor]
         protected TransactionEscrowStatus(string name) : base(name) {}
     }
 
@@ -60,7 +61,7 @@ namespace Braintree
             AUTHORIZATION_EXPIRED, AUTHORIZED, AUTHORIZING, FAILED, GATEWAY_REJECTED, PROCESSOR_DECLINED,
             SETTLED, SETTLEMENT_CONFIRMED, SETTLEMENT_DECLINED, SETTLEMENT_PENDING, SETTLING, SUBMITTED_FOR_SETTLEMENT, VOIDED, UNRECOGNIZED
         };
-
+        [JsonConstructor]
         protected TransactionStatus(string name) : base(name) {}
     }
 
@@ -68,7 +69,7 @@ namespace Braintree
     {
         public static readonly TransactionIndustryType LODGING = new TransactionIndustryType("lodging");
         public static readonly TransactionIndustryType TRAVEL_AND_CRUISE = new TransactionIndustryType("travel_cruise");
-
+        [JsonConstructor]
         protected TransactionIndustryType(string name) : base(name) {}
     }
 
@@ -80,7 +81,7 @@ namespace Braintree
         public static readonly TransactionSource UNRECOGNIZED = new TransactionSource("unrecognized");
 
         public static readonly TransactionSource[] ALL = { API, CONTROL_PANEL, RECURRING, UNRECOGNIZED };
-
+        [JsonConstructor]
         protected TransactionSource(string name) : base(name) {}
     }
 
@@ -91,7 +92,7 @@ namespace Braintree
         public static readonly TransactionType UNRECOGNIZED = new TransactionType("unrecognized");
 
         public static readonly TransactionType[] ALL = { CREDIT, SALE, UNRECOGNIZED };
-
+        [JsonConstructor]
         protected TransactionType(string name) : base(name) {}
     }
 
@@ -102,7 +103,7 @@ namespace Braintree
         public static readonly TransactionCreatedUsing UNRECOGNIZED = new TransactionCreatedUsing("unrecognized");
 
         public static readonly TransactionCreatedUsing[] ALL = { FULL_INFORMATION, TOKEN, UNRECOGNIZED };
-
+        [JsonConstructor]
         protected TransactionCreatedUsing(string name) : base(name) {}
     }
 
@@ -122,7 +123,7 @@ namespace Braintree
         public static readonly PaymentInstrumentType UNKNOWN = new PaymentInstrumentType("unknown");
 
         public static readonly PaymentInstrumentType[] ALL = { PAYPAL_ACCOUNT, EUROPE_BANK_ACCOUNT, CREDIT_CARD, COINBASE_ACCOUNT, ANDROID_PAY_CARD, APPLE_PAY_CARD, AMEX_EXPRESS_CHECKOUT_CARD, VENMO_ACCOUNT, US_BANK_ACCOUNT, ANY, UNKNOWN };
-
+        [JsonConstructor]
         protected PaymentInstrumentType(string name) : base(name) {}
     }
 

@@ -1,5 +1,6 @@
 #pragma warning disable 1591
 
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -12,7 +13,7 @@ namespace Braintree
         public static readonly CreditCardCustomerLocation UNRECOGNIZED = new CreditCardCustomerLocation("unrecognized");
 
         public static readonly CreditCardCustomerLocation[] ALL = {US, INTERNATIONAL};
-
+        [JsonConstructor]
         protected CreditCardCustomerLocation(string name) : base(name) {}
     }
 
@@ -23,7 +24,7 @@ namespace Braintree
         public static readonly CreditCardPrepaid UNKNOWN = new CreditCardPrepaid("Unknown");
 
         public static readonly CreditCardPrepaid[] ALL = {YES, NO, UNKNOWN};
-
+        [JsonConstructor]
         protected CreditCardPrepaid(string name) : base(name) {}
     }
 
@@ -34,7 +35,7 @@ namespace Braintree
         public static readonly CreditCardPayroll UNKNOWN = new CreditCardPayroll("Unknown");
 
         public static readonly CreditCardPayroll[] ALL = {YES, NO, UNKNOWN};
-
+        [JsonConstructor]
         protected CreditCardPayroll(string name) : base(name) {}
     }
 
@@ -45,7 +46,7 @@ namespace Braintree
         public static readonly CreditCardDebit UNKNOWN = new CreditCardDebit("Unknown");
 
         public static readonly CreditCardDebit[] ALL = {YES, NO, UNKNOWN};
-
+        [JsonConstructor]
         protected CreditCardDebit(string name) : base(name) {}
     }
 
@@ -56,7 +57,7 @@ namespace Braintree
         public static readonly CreditCardCommercial UNKNOWN = new CreditCardCommercial("Unknown");
 
         public static readonly CreditCardCommercial[] ALL = {YES, NO, UNKNOWN};
-
+        [JsonConstructor]
         protected CreditCardCommercial(string name) : base(name) {}
     }
 
@@ -67,7 +68,7 @@ namespace Braintree
         public static readonly CreditCardHealthcare UNKNOWN = new CreditCardHealthcare("Unknown");
 
         public static readonly CreditCardHealthcare[] ALL = {YES, NO, UNKNOWN};
-
+        [JsonConstructor]
         protected CreditCardHealthcare(string name) : base(name) {}
     }
 
@@ -78,7 +79,7 @@ namespace Braintree
         public static readonly CreditCardDurbinRegulated UNKNOWN = new CreditCardDurbinRegulated("Unknown");
 
         public static readonly CreditCardDurbinRegulated[] ALL = {YES, NO, UNKNOWN};
-
+        [JsonConstructor]
         protected CreditCardDurbinRegulated(string name) : base(name) {}
     }
 
@@ -103,7 +104,7 @@ namespace Braintree
             AMEX, CARTE_BLANCHE, CHINA_UNION_PAY, DINERS_CLUB_INTERNATIONAL, DISCOVER,
             JCB, LASER, MAESTRO, MASTER_CARD, SOLO, SWITCH, VISA, UNKNOWN
         };
-
+        [JsonConstructor]
         protected CreditCardCardType(string name) : base(name) {}
     }
 

@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 
 namespace Braintree
@@ -11,6 +12,7 @@ namespace Braintree
 
         public static readonly FundingDestination[] ALL = { BANK, MOBILE_PHONE, EMAIL, UNRECOGNIZED };
 
+        [JsonConstructor]
         protected FundingDestination(string name) : base(name) {}
     }
 
@@ -22,6 +24,7 @@ namespace Braintree
 
         public static readonly MerchantAccountStatus[] ALL = { PENDING, ACTIVE, SUSPENDED };
 
+        [JsonConstructor]
         protected MerchantAccountStatus(string name) : base(name) {}
     }
 

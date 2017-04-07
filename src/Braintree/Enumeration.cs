@@ -4,9 +4,14 @@ namespace Braintree
 {
     public abstract class Enumeration
     {
-        protected string Name;
+        public string Name;
 
-        protected Enumeration(string name)
+        public Enumeration()
+        {
+        }
+
+
+        public Enumeration(string name)
         {
             Name = name;
         }

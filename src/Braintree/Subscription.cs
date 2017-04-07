@@ -1,5 +1,6 @@
 #pragma warning disable 1591
 
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -24,7 +25,7 @@ namespace Braintree
         public static readonly SubscriptionDurationUnit UNRECOGNIZED = new SubscriptionDurationUnit("unrecognized");
 
         public static readonly SubscriptionDurationUnit[] ALL = { DAY, MONTH };
-
+        [JsonConstructor]
         protected SubscriptionDurationUnit(string name) : base(name) {}
     }
 
@@ -59,7 +60,7 @@ namespace Braintree
         public static readonly SubscriptionStatus UNRECOGNIZED = new SubscriptionStatus("Unrecognized");
 
         public static readonly SubscriptionStatus[] STATUSES = {ACTIVE, CANCELED, EXPIRED, PAST_DUE, PENDING};
-
+        [JsonConstructor]
         protected SubscriptionStatus(string name) : base(name) {}
     }
 
@@ -71,7 +72,7 @@ namespace Braintree
         public static readonly SubscriptionSource UNRECOGNIZED = new SubscriptionSource("unrecognized");
 
         public static readonly SubscriptionSource[] ALL = { API, CONTROL_PANEL, RECURRING, UNRECOGNIZED };
-
+        [JsonConstructor]
         protected SubscriptionSource(string name) : base(name) {}
     }
 

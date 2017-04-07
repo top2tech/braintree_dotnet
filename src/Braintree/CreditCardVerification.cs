@@ -1,5 +1,6 @@
 #pragma warning disable 1591
 
+using Newtonsoft.Json;
 using System;
 
 namespace Braintree
@@ -16,7 +17,7 @@ namespace Braintree
         public static readonly VerificationStatus[] ALL = {
             FAILED, GATEWAY_REJECTED, PROCESSOR_DECLINED, VERIFIED
         };
-
+        [JsonConstructor]
         protected VerificationStatus(string name) : base(name) {}
     }
 

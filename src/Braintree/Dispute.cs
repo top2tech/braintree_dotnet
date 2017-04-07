@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 
 namespace Braintree
@@ -12,7 +13,7 @@ namespace Braintree
         public static readonly DisputeStatus[] ALL = {
             OPEN, LOST, WON, UNRECOGNIZED
         };
-
+        [JsonConstructor]
         protected DisputeStatus(string name) : base(name) {}
     }
 
@@ -26,7 +27,7 @@ namespace Braintree
         public static readonly DisputeKind[] ALL = {
             CHARGEBACK, PRE_ARBITRATION, RETRIEVAL, UNRECOGNIZED
         };
-
+        [JsonConstructor]
         protected DisputeKind(string name) : base(name) {}
     }
 
@@ -48,7 +49,7 @@ namespace Braintree
         public static readonly DisputeReason[] ALL = {
           CANCELLED_RECURRING_TRANSACTION, CREDIT_NOT_PROCESSED, DUPLICATE, FRAUD, GENERAL, INVALID_ACCOUNT, NOT_RECOGNIZED, PRODUCT_NOT_RECEIVED, PRODUCT_UNSATISFACTORY, TRANSACTION_AMOUNT_DIFFERS, RETRIEVAL
         };
-
+        [JsonConstructor]
         protected DisputeReason(string name) : base(name) {}
     }
 

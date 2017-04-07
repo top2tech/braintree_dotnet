@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -9,6 +10,7 @@ namespace Braintree
         public static readonly PlanDurationUnit MONTH = new PlanDurationUnit("month");
         public static readonly PlanDurationUnit UNRECOGNIZED = new PlanDurationUnit("unrecognized");
         public static readonly PlanDurationUnit[] ALL = { DAY, MONTH };
+        [JsonConstructor]
         protected PlanDurationUnit(string name) : base(name) {}
     }
 

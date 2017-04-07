@@ -27,6 +27,8 @@ namespace Braintree
         public string Message { get; protected set; }
         public T Target { get; protected set; }
 
+        public ResultImpl() {}
+
         public ResultImpl(NodeWrapper node, IBraintreeGateway gateway)
         {
             if (node.IsSuccess())

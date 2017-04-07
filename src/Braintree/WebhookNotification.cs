@@ -1,5 +1,6 @@
 #pragma warning disable 1591
 
+using Newtonsoft.Json;
 using System;
 
 namespace Braintree
@@ -54,7 +55,7 @@ namespace Braintree
             DISPUTE_WON,
             ACCOUNT_UPDATER_DAILY_REPORT
         };
-
+        [JsonConstructor]
         protected WebhookKind(string name) : base(name) {}
     }
 
