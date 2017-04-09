@@ -16,19 +16,19 @@ namespace Braintree
 
     public class Plan
     {
-        public virtual List<AddOn> AddOns { get; protected set; }
-        public virtual int? BillingDayOfMonth { get; protected set; }
-        public virtual int? BillingFrequency { get; protected set; }
-        public virtual string CurrencyIsoCode { get; protected set; }
-        public virtual string Description { get; protected set; }
-        public virtual List<Discount> Discounts { get; protected set; }
-        public virtual string Id { get; protected set; }
-        public virtual string Name { get; protected set; }
-        public virtual int? NumberOfBillingCycles { get; protected set; }
-        public virtual decimal? Price { get; protected set; }
-        public virtual bool? TrialPeriod { get; protected set; }
-        public virtual int? TrialDuration { get; protected set; }
-        public virtual PlanDurationUnit TrialDurationUnit { get; protected set; }
+        public virtual List<AddOn> AddOns { get; set; }
+        public virtual int? BillingDayOfMonth { get; set; }
+        public virtual int? BillingFrequency { get; set; }
+        public virtual string CurrencyIsoCode { get; set; }
+        public virtual string Description { get; set; }
+        public virtual List<Discount> Discounts { get; set; }
+        public virtual string Id { get; set; }
+        public virtual string Name { get; set; }
+        public virtual int? NumberOfBillingCycles { get; set; }
+        public virtual decimal? Price { get; set; }
+        public virtual bool? TrialPeriod { get; set; }
+        public virtual int? TrialDuration { get; set; }
+        public virtual PlanDurationUnit TrialDurationUnit { get; set; }
 
         public Plan(NodeWrapper node)
         {

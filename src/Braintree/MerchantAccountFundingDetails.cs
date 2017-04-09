@@ -6,12 +6,12 @@ namespace Braintree
 {
     public class MerchantAccountFundingDetails
     {
-        public virtual FundingDestination Destination { get; protected set; }
-        public virtual string RoutingNumber { get; protected set; }
-        public virtual string AccountNumberLast4 { get; protected set; }
-        public virtual string Email { get; protected set; }
-        public virtual string MobilePhone { get; protected set; }
-        public virtual string Descriptor { get; protected set; }
+        public virtual FundingDestination Destination { get; set; }
+        public virtual string RoutingNumber { get; set; }
+        public virtual string AccountNumberLast4 { get; set; }
+        public virtual string Email { get; set; }
+        public virtual string MobilePhone { get; set; }
+        public virtual string Descriptor { get; set; }
 
         protected internal MerchantAccountFundingDetails(NodeWrapper node)
         {

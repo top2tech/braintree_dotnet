@@ -6,11 +6,11 @@ namespace Braintree
 {
     public class StatusEvent
     {
-        public virtual decimal? Amount { get; protected set; }
-        public virtual TransactionStatus Status { get; protected set; }
-        public virtual DateTime? Timestamp { get; protected set; }
-        public virtual TransactionSource Source { get; protected set; }
-        public virtual string User { get; protected set; }
+        public virtual decimal? Amount { get; set; }
+        public virtual TransactionStatus Status { get; set; }
+        public virtual DateTime? Timestamp { get; set; }
+        public virtual TransactionSource Source { get; set; }
+        public virtual string User { get; set; }
 
         public StatusEvent(NodeWrapper node)
         {

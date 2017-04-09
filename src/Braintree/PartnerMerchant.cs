@@ -4,11 +4,11 @@ namespace Braintree
 {
     public class PartnerMerchant
     {
-        public virtual string MerchantPublicId { get; protected set; }
-        public virtual string PublicKey { get; protected set; }
-        public virtual string PrivateKey { get; protected set; }
-        public virtual string PartnerMerchantId { get; protected set; }
-        public virtual string ClientSideEncryptionKey { get; protected set; }
+        public virtual string MerchantPublicId { get; set; }
+        public virtual string PublicKey { get; set; }
+        public virtual string PrivateKey { get; set; }
+        public virtual string PartnerMerchantId { get; set; }
+        public virtual string ClientSideEncryptionKey { get; set; }
 
         protected internal PartnerMerchant(NodeWrapper node)
         {

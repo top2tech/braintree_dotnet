@@ -88,36 +88,36 @@ namespace Braintree
     /// </example>
     public class Subscription
     {
-        public virtual decimal? Balance { get; protected set; }
-        public virtual List<AddOn> AddOns { get; protected set; }
-        public virtual int? BillingDayOfMonth { get; protected set; }
-        public virtual DateTime? BillingPeriodEndDate { get; protected set; }
-        public virtual DateTime? BillingPeriodStartDate { get; protected set; }
-        public virtual int? CurrentBillingCycle { get; protected set; }
-        public virtual int? DaysPastDue { get; protected set; }
-        public virtual Descriptor Descriptor { get; protected set; }
-        public virtual List<Discount> Discounts { get; protected set; }
-        public virtual int? FailureCount { get; protected set; }
-        public virtual DateTime? FirstBillingDate { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual DateTime? UpdatedAt { get; protected set; }
-        public virtual bool? HasTrialPeriod { get; protected set; }
-        public virtual string Id { get; protected set; }
-        public virtual bool? NeverExpires { get; protected set; }
-        public virtual decimal? NextBillAmount { get; protected set; }
-        public virtual DateTime? NextBillingDate { get; protected set; }
-        public virtual decimal? NextBillingPeriodAmount { get; protected set; }
-        public virtual int? NumberOfBillingCycles { get; protected set; }
-        public virtual DateTime? PaidThroughDate { get; protected set; }
-        public virtual string PaymentMethodToken { get; protected set; }
-        public virtual string PlanId { get; protected set; }
-        public virtual decimal? Price { get; protected set; }
-        public virtual SubscriptionStatusEvent[] StatusHistory { get; protected set; }
-        public virtual SubscriptionStatus Status { get; protected set; }
-        public virtual List<Transaction> Transactions { get; protected set; }
-        public virtual int? TrialDuration { get; protected set; }
-        public virtual SubscriptionDurationUnit TrialDurationUnit { get; protected set; }
-        public virtual string MerchantAccountId { get; protected set; }
+        public virtual decimal? Balance { get; set; }
+        public virtual List<AddOn> AddOns { get; set; }
+        public virtual int? BillingDayOfMonth { get; set; }
+        public virtual DateTime? BillingPeriodEndDate { get; set; }
+        public virtual DateTime? BillingPeriodStartDate { get; set; }
+        public virtual int? CurrentBillingCycle { get; set; }
+        public virtual int? DaysPastDue { get; set; }
+        public virtual Descriptor Descriptor { get; set; }
+        public virtual List<Discount> Discounts { get; set; }
+        public virtual int? FailureCount { get; set; }
+        public virtual DateTime? FirstBillingDate { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual DateTime? UpdatedAt { get; set; }
+        public virtual bool? HasTrialPeriod { get; set; }
+        public virtual string Id { get; set; }
+        public virtual bool? NeverExpires { get; set; }
+        public virtual decimal? NextBillAmount { get; set; }
+        public virtual DateTime? NextBillingDate { get; set; }
+        public virtual decimal? NextBillingPeriodAmount { get; set; }
+        public virtual int? NumberOfBillingCycles { get; set; }
+        public virtual DateTime? PaidThroughDate { get; set; }
+        public virtual string PaymentMethodToken { get; set; }
+        public virtual string PlanId { get; set; }
+        public virtual decimal? Price { get; set; }
+        public virtual SubscriptionStatusEvent[] StatusHistory { get; set; }
+        public virtual SubscriptionStatus Status { get; set; }
+        public virtual List<Transaction> Transactions { get; set; }
+        public virtual int? TrialDuration { get; set; }
+        public virtual SubscriptionDurationUnit TrialDurationUnit { get; set; }
+        public virtual string MerchantAccountId { get; set; }
 
         public Subscription(NodeWrapper node, IBraintreeGateway gateway)
         {

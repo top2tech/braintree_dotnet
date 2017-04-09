@@ -1,12 +1,13 @@
 #pragma warning disable 1591
 
+
 namespace Braintree
 {
     public class Descriptor
     {
-        public string Name { get; protected set; }
-        public string Phone { get; protected set; }
-        public string Url { get; protected set; }
+        public string Name { get; set; }
+        public string Phone { get; set; }
+        public string Url { get; set; }
 
         protected internal Descriptor(NodeWrapper node)
         {
@@ -17,5 +18,11 @@ namespace Braintree
                 Url = node.GetString("url");
             }
         }
+
+        public Descriptor()
+        {
+
+        }
+
     }
 }

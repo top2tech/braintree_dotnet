@@ -4,8 +4,8 @@ namespace Braintree
 {
     public class RiskData
     {
-        public virtual string id { get; protected set; }
-        public virtual string decision { get; protected set; }
+        public virtual string id { get; set; }
+        public virtual string decision { get; set; }
 
         public RiskData(NodeWrapper node)
         {

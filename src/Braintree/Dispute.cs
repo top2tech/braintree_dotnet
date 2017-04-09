@@ -55,17 +55,17 @@ namespace Braintree
 
     public class Dispute
     {
-        public virtual decimal? Amount { get; protected set; }
-        public virtual DateTime? ReceivedDate { get; protected set; }
-        public virtual DateTime? ReplyByDate { get; protected set; }
-        public virtual DateTime? DateOpened { get; protected set; }
-        public virtual DateTime? DateWon { get; protected set; }
-        public virtual DisputeReason Reason { get; protected set; }
-        public virtual DisputeStatus Status { get; protected set; }
-        public virtual DisputeKind Kind { get; protected set; }
-        public virtual string CurrencyIsoCode { get; protected set; }
-        public virtual string Id { get; protected set; }
-        public virtual TransactionDetails TransactionDetails { get; protected set; }
+        public virtual decimal? Amount { get; set; }
+        public virtual DateTime? ReceivedDate { get; set; }
+        public virtual DateTime? ReplyByDate { get; set; }
+        public virtual DateTime? DateOpened { get; set; }
+        public virtual DateTime? DateWon { get; set; }
+        public virtual DisputeReason Reason { get; set; }
+        public virtual DisputeStatus Status { get; set; }
+        public virtual DisputeKind Kind { get; set; }
+        public virtual string CurrencyIsoCode { get; set; }
+        public virtual string Id { get; set; }
+        public virtual TransactionDetails TransactionDetails { get; set; }
 
         public Dispute(NodeWrapper node)
         {

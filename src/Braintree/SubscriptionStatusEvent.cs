@@ -6,14 +6,14 @@ namespace Braintree
 {
     public class SubscriptionStatusEvent
     {
-        public virtual decimal? Price { get; protected set; }
-        public virtual decimal? Balance { get; protected set; }
-        public virtual SubscriptionStatus Status { get; protected set; }
-        public virtual DateTime? Timestamp { get; protected set; }
-        public virtual SubscriptionSource Source { get; protected set; }
-        public virtual string User { get; protected set; }
-        public virtual string CurrencyIsoCode { get; protected set; }
-        public virtual string PlanId { get; protected set; }
+        public virtual decimal? Price { get; set; }
+        public virtual decimal? Balance { get; set; }
+        public virtual SubscriptionStatus Status { get; set; }
+        public virtual DateTime? Timestamp { get; set; }
+        public virtual SubscriptionSource Source { get; set; }
+        public virtual string User { get; set; }
+        public virtual string CurrencyIsoCode { get; set; }
+        public virtual string PlanId { get; set; }
 
         public SubscriptionStatusEvent(NodeWrapper node)
         {

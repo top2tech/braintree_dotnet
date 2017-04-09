@@ -4,8 +4,8 @@ namespace Braintree
 {
     public class AccountUpdaterDailyReport
     {
-        public virtual DateTime? ReportDate { get; protected set; }
-        public virtual string ReportUrl { get; protected set; }
+        public virtual DateTime? ReportDate { get; set; }
+        public virtual string ReportUrl { get; set; }
 
         protected internal AccountUpdaterDailyReport(NodeWrapper node)
         {

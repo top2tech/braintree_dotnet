@@ -4,19 +4,19 @@ namespace Braintree
 {
     public class AndroidPayDetails
     {
-        public virtual string Bin { get; protected set; }
-        public virtual string ExpirationMonth { get; protected set; }
-        public virtual string ExpirationYear { get; protected set; }
-        public virtual string GoogleTransactionId { get; protected set; }
-        public virtual string ImageUrl { get; protected set; }
-        public virtual string SourceCardLast4 { get; protected set; }
-        public virtual string SourceCardType { get; protected set; }
-        public virtual string SourceDescription { get; protected set; }
-        public virtual string VirtualCardLast4 { get; protected set; }
-        public virtual string VirtualCardType { get; protected set; }
-        public virtual string CardType { get; protected set; }
-        public virtual string Last4 { get; protected set; }
-        public virtual string Token { get; protected set; }
+        public virtual string Bin { get; set; }
+        public virtual string ExpirationMonth { get; set; }
+        public virtual string ExpirationYear { get; set; }
+        public virtual string GoogleTransactionId { get; set; }
+        public virtual string ImageUrl { get; set; }
+        public virtual string SourceCardLast4 { get; set; }
+        public virtual string SourceCardType { get; set; }
+        public virtual string SourceDescription { get; set; }
+        public virtual string VirtualCardLast4 { get; set; }
+        public virtual string VirtualCardType { get; set; }
+        public virtual string CardType { get; set; }
+        public virtual string Last4 { get; set; }
+        public virtual string Token { get; set; }
 
         protected internal AndroidPayDetails(NodeWrapper node)
         {

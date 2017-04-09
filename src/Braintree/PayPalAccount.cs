@@ -4,15 +4,15 @@ namespace Braintree
 {
     public class PayPalAccount : PaymentMethod
     {
-        public virtual string Email { get; protected set; }
-        public virtual string BillingAgreementId { get; protected set; }
-        public virtual string Token { get; protected set; }
-        public virtual bool? IsDefault { get; protected set; }
-        public virtual string ImageUrl { get; protected set; }
-        public virtual string CustomerId { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual DateTime? UpdatedAt { get; protected set; }
-        public virtual Subscription[] Subscriptions { get; protected set; }
+        public virtual string Email { get; set; }
+        public virtual string BillingAgreementId { get; set; }
+        public virtual string Token { get; set; }
+        public virtual bool? IsDefault { get; set; }
+        public virtual string ImageUrl { get; set; }
+        public virtual string CustomerId { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual DateTime? UpdatedAt { get; set; }
+        public virtual Subscription[] Subscriptions { get; set; }
 
         protected internal PayPalAccount(NodeWrapper node, IBraintreeGateway gateway)
         {

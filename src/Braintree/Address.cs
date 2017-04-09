@@ -23,22 +23,22 @@ namespace Braintree
     /// </example>
     public class Address
     {
-        public virtual string Id { get; protected set; }
-        public virtual string CustomerId { get; protected set; }
-        public virtual string FirstName { get; protected set; }
-        public virtual string LastName { get; protected set; }
-        public virtual string Company { get; protected set; }
-        public virtual string StreetAddress { get; protected set; }
-        public virtual string ExtendedAddress { get; protected set; }
-        public virtual string Locality { get; protected set; }
-        public virtual string Region { get; protected set; }
-        public virtual string PostalCode { get; protected set; }
-        public virtual string CountryCodeAlpha2 { get; protected set; }
-        public virtual string CountryCodeAlpha3 { get; protected set; }
-        public virtual string CountryCodeNumeric { get; protected set; }
-        public virtual string CountryName { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual DateTime? UpdatedAt { get; protected set; }
+        public virtual string Id { get; set; }
+        public virtual string CustomerId { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string Company { get; set; }
+        public virtual string StreetAddress { get; set; }
+        public virtual string ExtendedAddress { get; set; }
+        public virtual string Locality { get; set; }
+        public virtual string Region { get; set; }
+        public virtual string PostalCode { get; set; }
+        public virtual string CountryCodeAlpha2 { get; set; }
+        public virtual string CountryCodeAlpha3 { get; set; }
+        public virtual string CountryCodeNumeric { get; set; }
+        public virtual string CountryName { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual DateTime? UpdatedAt { get; set; }
 
         protected internal Address(NodeWrapper node)
         {

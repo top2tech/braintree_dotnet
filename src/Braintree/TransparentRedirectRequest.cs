@@ -9,7 +9,7 @@ namespace Braintree
 {
     public class TransparentRedirectRequest : Request
     {
-        public string Id { get; protected set; }
+        public string Id { get; set; }
 
         public TransparentRedirectRequest(string queryString, BraintreeService service)
         {

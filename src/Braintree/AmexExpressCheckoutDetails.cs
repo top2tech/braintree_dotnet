@@ -4,15 +4,15 @@ namespace Braintree
 {
     public class AmexExpressCheckoutDetails
     {
-        public virtual string Token { get; protected set; }
-        public virtual string CardType { get; protected set; }
-        public virtual string Bin { get; protected set; }
-        public virtual string ExpirationMonth { get; protected set; }
-        public virtual string ExpirationYear { get; protected set; }
-        public virtual string CardMemberNumber { get; protected set; }
-        public virtual string CardMemberExpiryDate { get; protected set; }
-        public virtual string ImageUrl { get; protected set; }
-        public virtual string SourceDescription { get; protected set; }
+        public virtual string Token { get; set; }
+        public virtual string CardType { get; set; }
+        public virtual string Bin { get; set; }
+        public virtual string ExpirationMonth { get; set; }
+        public virtual string ExpirationYear { get; set; }
+        public virtual string CardMemberNumber { get; set; }
+        public virtual string CardMemberExpiryDate { get; set; }
+        public virtual string ImageUrl { get; set; }
+        public virtual string SourceDescription { get; set; }
 
         protected internal AmexExpressCheckoutDetails(NodeWrapper node)
         {

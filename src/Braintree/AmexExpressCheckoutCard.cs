@@ -4,20 +4,20 @@ namespace Braintree
 {
     public class AmexExpressCheckoutCard : PaymentMethod
     {
-        public virtual string Token { get; protected set; }
-        public virtual string CardType { get; protected set; }
-        public virtual string Bin { get; protected set; }
-        public virtual string ExpirationMonth { get; protected set; }
-        public virtual string ExpirationYear { get; protected set; }
-        public virtual string CardMemberNumber { get; protected set; }
-        public virtual string CardMemberExpiryDate { get; protected set; }
-        public virtual string ImageUrl { get; protected set; }
-        public virtual string SourceDescription { get; protected set; }
-        public virtual bool? IsDefault { get; protected set; }
-        public virtual string CustomerId { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual DateTime? UpdatedAt { get; protected set; }
-        public virtual Subscription[] Subscriptions { get; protected set; }
+        public virtual string Token { get; set; }
+        public virtual string CardType { get; set; }
+        public virtual string Bin { get; set; }
+        public virtual string ExpirationMonth { get; set; }
+        public virtual string ExpirationYear { get; set; }
+        public virtual string CardMemberNumber { get; set; }
+        public virtual string CardMemberExpiryDate { get; set; }
+        public virtual string ImageUrl { get; set; }
+        public virtual string SourceDescription { get; set; }
+        public virtual bool? IsDefault { get; set; }
+        public virtual string CustomerId { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual DateTime? UpdatedAt { get; set; }
+        public virtual Subscription[] Subscriptions { get; set; }
 
         protected internal AmexExpressCheckoutCard(NodeWrapper node, IBraintreeGateway gateway)
         {

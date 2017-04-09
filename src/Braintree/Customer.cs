@@ -17,27 +17,27 @@ namespace Braintree
     /// </example>
     public class Customer
     {
-        public virtual string Id { get; protected set; }
-        public virtual string FirstName { get; protected set; }
-        public virtual string LastName { get; protected set; }
-        public virtual string Company { get; protected set; }
-        public virtual string Email { get; protected set; }
-        public virtual string Phone { get; protected set; }
-        public virtual string Fax { get; protected set; }
-        public virtual string Website { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual DateTime? UpdatedAt { get; protected set; }
-        public virtual CreditCard[] CreditCards { get; protected set; }
-        public virtual PayPalAccount[] PayPalAccounts { get; protected set; }
-        public virtual ApplePayCard[] ApplePayCards { get; protected set; }
-        public virtual AndroidPayCard[] AndroidPayCards { get; protected set; }
-        public virtual AmexExpressCheckoutCard[] AmexExpressCheckoutCards { get; protected set; }
-        public virtual CoinbaseAccount[] CoinbaseAccounts { get; protected set; }
-        public virtual VenmoAccount[] VenmoAccounts { get; protected set; }
-        public virtual UsBankAccount[] UsBankAccounts { get; protected set; }
-        public virtual PaymentMethod[] PaymentMethods { get; protected set; }
-        public virtual Address[] Addresses { get; protected set; }
-        public virtual Dictionary<string, string> CustomFields { get; protected set; }
+        public virtual string Id { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string Company { get; set; }
+        public virtual string Email { get; set; }
+        public virtual string Phone { get; set; }
+        public virtual string Fax { get; set; }
+        public virtual string Website { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual DateTime? UpdatedAt { get; set; }
+        public virtual CreditCard[] CreditCards { get; set; }
+        public virtual PayPalAccount[] PayPalAccounts { get; set; }
+        public virtual ApplePayCard[] ApplePayCards { get; set; }
+        public virtual AndroidPayCard[] AndroidPayCards { get; set; }
+        public virtual AmexExpressCheckoutCard[] AmexExpressCheckoutCards { get; set; }
+        public virtual CoinbaseAccount[] CoinbaseAccounts { get; set; }
+        public virtual VenmoAccount[] VenmoAccounts { get; set; }
+        public virtual UsBankAccount[] UsBankAccounts { get; set; }
+        public virtual PaymentMethod[] PaymentMethods { get; set; }
+        public virtual Address[] Addresses { get; set; }
+        public virtual Dictionary<string, string> CustomFields { get; set; }
         public PaymentMethod DefaultPaymentMethod
         {
             get

@@ -4,16 +4,16 @@ namespace Braintree
 {
     public class VenmoAccount : PaymentMethod
     {
-        public string Token { get; protected set; }
-        public string Username { get; protected set; }
-        public string VenmoUserId { get; protected set; }
-        public string SourceDescription { get; protected set; }
-        public string ImageUrl { get; protected set; }
-        public bool? IsDefault { get; protected set; }
-        public string CustomerId { get; protected set; }
-        public DateTime? CreatedAt { get; protected set; }
-        public DateTime? UpdatedAt { get; protected set; }
-        public Subscription[] Subscriptions { get; protected set; }
+        public string Token { get; set; }
+        public string Username { get; set; }
+        public string VenmoUserId { get; set; }
+        public string SourceDescription { get; set; }
+        public string ImageUrl { get; set; }
+        public bool? IsDefault { get; set; }
+        public string CustomerId { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public Subscription[] Subscriptions { get; set; }
 
         protected internal VenmoAccount(NodeWrapper node, IBraintreeGateway gateway)
         {

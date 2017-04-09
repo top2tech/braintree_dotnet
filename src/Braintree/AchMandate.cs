@@ -4,8 +4,8 @@ namespace Braintree
 {
     public class AchMandate
     {
-        public virtual string Text { get; protected set; }
-        public virtual DateTime? AcceptedAt { get; protected set; }
+        public virtual string Text { get; set; }
+        public virtual DateTime? AcceptedAt { get; set; }
 
         protected internal AchMandate(NodeWrapper node)
         {

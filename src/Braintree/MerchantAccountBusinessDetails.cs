@@ -6,10 +6,10 @@ namespace Braintree
 {
     public class MerchantAccountBusinessDetails
     {
-        public virtual string DbaName { get; protected set; }
-        public virtual string LegalName { get; protected set; }
-        public virtual string TaxId { get; protected set; }
-        public virtual Address Address { get; protected set; }
+        public virtual string DbaName { get; set; }
+        public virtual string LegalName { get; set; }
+        public virtual string TaxId { get; set; }
+        public virtual Address Address { get; set; }
 
         protected internal MerchantAccountBusinessDetails(NodeWrapper node)
         {

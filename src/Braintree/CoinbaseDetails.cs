@@ -4,10 +4,10 @@ namespace Braintree
 {
     public class CoinbaseDetails
     {
-        public virtual string UserId { get; protected set; }
-        public virtual string UserEmail { get; protected set; }
-        public virtual string UserName { get; protected set; }
-        public virtual string Token { get; protected set; }
+        public virtual string UserId { get; set; }
+        public virtual string UserEmail { get; set; }
+        public virtual string UserName { get; set; }
+        public virtual string Token { get; set; }
 
         protected internal CoinbaseDetails(NodeWrapper node)
         {

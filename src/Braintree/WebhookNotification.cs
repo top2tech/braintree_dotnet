@@ -61,17 +61,17 @@ namespace Braintree
 
     public class WebhookNotification
     {
-        public virtual WebhookKind Kind { get; protected set; }
-        public virtual Subscription Subscription { get; protected set; }
-        public virtual MerchantAccount MerchantAccount { get; protected set; }
-        public virtual ValidationErrors Errors { get; protected set; }
-        public virtual string Message { get; protected set; }
-        public virtual DateTime? Timestamp { get; protected set; }
-        public virtual Transaction Transaction { get; protected set; }
-        public virtual Disbursement Disbursement { get; protected set; }
-        public virtual Dispute Dispute { get; protected set; }
-        public virtual PartnerMerchant PartnerMerchant { get; protected set; }
-        public virtual AccountUpdaterDailyReport AccountUpdaterDailyReport { get; protected set; }
+        public virtual WebhookKind Kind { get; set; }
+        public virtual Subscription Subscription { get; set; }
+        public virtual MerchantAccount MerchantAccount { get; set; }
+        public virtual ValidationErrors Errors { get; set; }
+        public virtual string Message { get; set; }
+        public virtual DateTime? Timestamp { get; set; }
+        public virtual Transaction Transaction { get; set; }
+        public virtual Disbursement Disbursement { get; set; }
+        public virtual Dispute Dispute { get; set; }
+        public virtual PartnerMerchant PartnerMerchant { get; set; }
+        public virtual AccountUpdaterDailyReport AccountUpdaterDailyReport { get; set; }
 
         public WebhookNotification(NodeWrapper node, IBraintreeGateway gateway)
         {

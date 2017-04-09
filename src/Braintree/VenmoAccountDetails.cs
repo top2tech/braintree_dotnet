@@ -2,11 +2,11 @@ namespace Braintree
 {
     public class VenmoAccountDetails
     {
-        public string Token { get; protected set; }
-        public string Username { get; protected set; }
-        public string VenmoUserId { get; protected set; }
-        public string ImageUrl { get; protected set; }
-        public string SourceDescription { get; protected set; }
+        public string Token { get; set; }
+        public string Username { get; set; }
+        public string VenmoUserId { get; set; }
+        public string ImageUrl { get; set; }
+        public string SourceDescription { get; set; }
 
         protected internal VenmoAccountDetails(NodeWrapper node)
         {

@@ -19,13 +19,13 @@ namespace Braintree
 
     public class ResultImpl<T> : Result<T> where T : class
     {
-        public CreditCardVerification CreditCardVerification { get; protected set; }
-        public Transaction Transaction { get; protected set; }
-        public Subscription Subscription { get; protected set; }
-        public ValidationErrors Errors { get; protected set; }
-        public Dictionary<string, string> Parameters { get; protected set; }
-        public string Message { get; protected set; }
-        public T Target { get; protected set; }
+        public CreditCardVerification CreditCardVerification { get; set; }
+        public Transaction Transaction { get; set; }
+        public Subscription Subscription { get; set; }
+        public ValidationErrors Errors { get; set; }
+        public Dictionary<string, string> Parameters { get; set; }
+        public string Message { get; set; }
+        public T Target { get; set; }
 
         public ResultImpl() {}
 

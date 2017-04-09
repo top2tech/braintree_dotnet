@@ -139,65 +139,65 @@ namespace Braintree
     /// </example>
     public class Transaction
     {
-        public virtual string Id { get; protected set; }
-        public virtual List<AddOn> AddOns { get; protected set; }
-        public virtual decimal? Amount { get; protected set; }
-        public virtual string AvsErrorResponseCode { get; protected set; }
-        public virtual string AvsPostalCodeResponseCode { get; protected set; }
-        public virtual string AvsStreetAddressResponseCode { get; protected set; }
-        public virtual Address BillingAddress { get; protected set; }
-        public virtual string Channel { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual CreditCard CreditCard { get; protected set; }
-        public virtual string CurrencyIsoCode { get; protected set; }
-        public virtual Customer Customer { get; protected set; }
-        public virtual string CvvResponseCode { get; protected set; }
-        public virtual Descriptor Descriptor { get; protected set; }
-        public virtual List<Discount> Discounts { get; protected set; }
-        public virtual List<Dispute> Disputes { get; protected set; }
-        public virtual TransactionGatewayRejectionReason GatewayRejectionReason { get; protected set; }
-        public virtual string MerchantAccountId { get; protected set; }
-        public virtual string OrderId { get; protected set; }
-        public virtual string PlanId { get; protected set; }
-        public virtual string ProcessorAuthorizationCode { get; protected set; }
-        public virtual string ProcessorResponseCode { get; protected set; }
-        public virtual string ProcessorResponseText { get; protected set; }
-        public virtual string ProcessorSettlementResponseCode { get; protected set; }
-        public virtual string ProcessorSettlementResponseText { get; protected set; }
-        public virtual string AdditionalProcessorResponse { get; protected set; }
-        public virtual string VoiceReferralNumber { get; protected set; }
-        public virtual string PurchaseOrderNumber { get; protected set; }
-        public virtual bool? Recurring { get; protected set; }
-        public virtual string RefundedTransactionId { get; protected set; }
+        public virtual string Id { get; set; }
+        public virtual List<AddOn> AddOns { get; set; }
+        public virtual decimal? Amount { get; set; }
+        public virtual string AvsErrorResponseCode { get; set; }
+        public virtual string AvsPostalCodeResponseCode { get; set; }
+        public virtual string AvsStreetAddressResponseCode { get; set; }
+        public virtual Address BillingAddress { get; set; }
+        public virtual string Channel { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual CreditCard CreditCard { get; set; }
+        public virtual string CurrencyIsoCode { get; set; }
+        public virtual Customer Customer { get; set; }
+        public virtual string CvvResponseCode { get; set; }
+        public virtual Descriptor Descriptor { get; set; }
+        public virtual List<Discount> Discounts { get; set; }
+        public virtual List<Dispute> Disputes { get; set; }
+        public virtual TransactionGatewayRejectionReason GatewayRejectionReason { get; set; }
+        public virtual string MerchantAccountId { get; set; }
+        public virtual string OrderId { get; set; }
+        public virtual string PlanId { get; set; }
+        public virtual string ProcessorAuthorizationCode { get; set; }
+        public virtual string ProcessorResponseCode { get; set; }
+        public virtual string ProcessorResponseText { get; set; }
+        public virtual string ProcessorSettlementResponseCode { get; set; }
+        public virtual string ProcessorSettlementResponseText { get; set; }
+        public virtual string AdditionalProcessorResponse { get; set; }
+        public virtual string VoiceReferralNumber { get; set; }
+        public virtual string PurchaseOrderNumber { get; set; }
+        public virtual bool? Recurring { get; set; }
+        public virtual string RefundedTransactionId { get; set; }
         [Obsolete("Use Transaction.RefundIds")]
-        public virtual string RefundId { get; protected set; }
-        public virtual List<string> RefundIds { get; protected set; }
-        public virtual List<string> PartialSettlementTransactionIds { get; protected set; }
-        public virtual string AuthorizedTransactionId { get; protected set; }
-        public virtual string SettlementBatchId { get; protected set; }
-        public virtual Address ShippingAddress { get; protected set; }
-        public virtual TransactionEscrowStatus EscrowStatus { get; protected set; }
-        public virtual TransactionStatus Status { get; protected set; }
-        public virtual StatusEvent[] StatusHistory { get; protected set; }
-        public virtual string SubscriptionId { get; protected set; }
-        public virtual Subscription Subscription { get; protected set; }
-        public virtual decimal? TaxAmount { get; protected set; }
-        public virtual bool? TaxExempt { get; protected set; }
-        public virtual TransactionType Type { get; protected set; }
-        public virtual DateTime? UpdatedAt { get; protected set; }
-        public virtual Dictionary<string, string> CustomFields { get; protected set; }
-        public virtual decimal? ServiceFeeAmount { get; protected set; }
-        public virtual DisbursementDetails DisbursementDetails { get; protected set; }
-        public virtual ApplePayDetails ApplePayDetails { get; protected set; }
-        public virtual AndroidPayDetails AndroidPayDetails { get; protected set; }
-        public virtual AmexExpressCheckoutDetails AmexExpressCheckoutDetails { get; protected set; }
-        public virtual PayPalDetails PayPalDetails { get; protected set; }
-        public virtual CoinbaseDetails CoinbaseDetails { get; protected set; }
-        public virtual VenmoAccountDetails VenmoAccountDetails { get; protected set; }
-        public virtual UsBankAccountDetails UsBankAccountDetails { get; protected set; }
-        public virtual PaymentInstrumentType PaymentInstrumentType { get; protected set; }
-        public virtual RiskData RiskData { get; protected set; }
-        public virtual ThreeDSecureInfo ThreeDSecureInfo { get; protected set; }
+        public virtual string RefundId { get; set; }
+        public virtual List<string> RefundIds { get; set; }
+        public virtual List<string> PartialSettlementTransactionIds { get; set; }
+        public virtual string AuthorizedTransactionId { get; set; }
+        public virtual string SettlementBatchId { get; set; }
+        public virtual Address ShippingAddress { get; set; }
+        public virtual TransactionEscrowStatus EscrowStatus { get; set; }
+        public virtual TransactionStatus Status { get; set; }
+        public virtual StatusEvent[] StatusHistory { get; set; }
+        public virtual string SubscriptionId { get; set; }
+        public virtual Subscription Subscription { get; set; }
+        public virtual decimal? TaxAmount { get; set; }
+        public virtual bool? TaxExempt { get; set; }
+        public virtual TransactionType Type { get; set; }
+        public virtual DateTime? UpdatedAt { get; set; }
+        public virtual Dictionary<string, string> CustomFields { get; set; }
+        public virtual decimal? ServiceFeeAmount { get; set; }
+        public virtual DisbursementDetails DisbursementDetails { get; set; }
+        public virtual ApplePayDetails ApplePayDetails { get; set; }
+        public virtual AndroidPayDetails AndroidPayDetails { get; set; }
+        public virtual AmexExpressCheckoutDetails AmexExpressCheckoutDetails { get; set; }
+        public virtual PayPalDetails PayPalDetails { get; set; }
+        public virtual CoinbaseDetails CoinbaseDetails { get; set; }
+        public virtual VenmoAccountDetails VenmoAccountDetails { get; set; }
+        public virtual UsBankAccountDetails UsBankAccountDetails { get; set; }
+        public virtual PaymentInstrumentType PaymentInstrumentType { get; set; }
+        public virtual RiskData RiskData { get; set; }
+        public virtual ThreeDSecureInfo ThreeDSecureInfo { get; set; }
 
         private IBraintreeGateway Gateway;
 

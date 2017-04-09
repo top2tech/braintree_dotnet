@@ -5,9 +5,9 @@ namespace Braintree
 {
     public class ValidationError
     {
-        public string Attribute { get; protected set; }
-        public ValidationErrorCode Code { get; protected set; }
-        public string Message { get; protected set; }
+        public string Attribute { get; set; }
+        public ValidationErrorCode Code { get; set; }
+        public string Message { get; set; }
 
         public ValidationError(string attribute, string code, string message)
         {

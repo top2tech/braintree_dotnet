@@ -6,13 +6,13 @@ namespace Braintree
 {
     public class MerchantAccountIndividualDetails
     {
-        public virtual string FirstName { get; protected set; }
-        public virtual string LastName { get; protected set; }
-        public virtual string Email { get; protected set; }
-        public virtual string Phone { get; protected set; }
-        public virtual string DateOfBirth { get; protected set; }
-        public virtual string SsnLastFour { get; protected set; }
-        public virtual Address Address { get; protected set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string Email { get; set; }
+        public virtual string Phone { get; set; }
+        public virtual string DateOfBirth { get; set; }
+        public virtual string SsnLastFour { get; set; }
+        public virtual Address Address { get; set; }
 
         protected internal MerchantAccountIndividualDetails(NodeWrapper node)
         {

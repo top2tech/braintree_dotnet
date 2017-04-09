@@ -30,14 +30,14 @@ namespace Braintree
 
     public class MerchantAccount
     {
-      public virtual string Id { get; protected set; }
-      public virtual string CurrencyIsoCode { get; protected set; }
-      public virtual MerchantAccountStatus Status { get; protected set; }
-      public virtual MerchantAccount MasterMerchantAccount { get; protected set; }
-      public virtual MerchantAccountIndividualDetails IndividualDetails { get; protected set; }
-      public virtual MerchantAccountBusinessDetails BusinessDetails { get; protected set; }
-      public virtual MerchantAccountFundingDetails FundingDetails { get; protected set; }
-      public virtual bool? IsDefault { get; protected set; }
+      public virtual string Id { get; set; }
+      public virtual string CurrencyIsoCode { get; set; }
+      public virtual MerchantAccountStatus Status { get; set; }
+      public virtual MerchantAccount MasterMerchantAccount { get; set; }
+      public virtual MerchantAccountIndividualDetails IndividualDetails { get; set; }
+      public virtual MerchantAccountBusinessDetails BusinessDetails { get; set; }
+      public virtual MerchantAccountFundingDetails FundingDetails { get; set; }
+      public virtual bool? IsDefault { get; set; }
 
       public bool IsSubMerchant {
         get {

@@ -23,20 +23,20 @@ namespace Braintree
 
     public class CreditCardVerification
     {
-        public virtual string AvsErrorResponseCode { get; protected set; }
-        public virtual string AvsPostalCodeResponseCode { get; protected set; }
-        public virtual string AvsStreetAddressResponseCode { get; protected set; }
-        public virtual string CvvResponseCode { get; protected set; }
-        public virtual TransactionGatewayRejectionReason GatewayRejectionReason { get; protected set; }
-        public virtual string ProcessorResponseCode { get; protected set; }
-        public virtual string ProcessorResponseText { get; protected set; }
-        public virtual string MerchantAccountId { get; protected set; }
-        public virtual VerificationStatus Status { get; protected set; }
-        public virtual string Id { get; protected set; }
-        public virtual Address BillingAddress { get; protected set; }
-        public virtual CreditCard CreditCard { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual RiskData RiskData { get; protected set; }
+        public virtual string AvsErrorResponseCode { get; set; }
+        public virtual string AvsPostalCodeResponseCode { get; set; }
+        public virtual string AvsStreetAddressResponseCode { get; set; }
+        public virtual string CvvResponseCode { get; set; }
+        public virtual TransactionGatewayRejectionReason GatewayRejectionReason { get; set; }
+        public virtual string ProcessorResponseCode { get; set; }
+        public virtual string ProcessorResponseText { get; set; }
+        public virtual string MerchantAccountId { get; set; }
+        public virtual VerificationStatus Status { get; set; }
+        public virtual string Id { get; set; }
+        public virtual Address BillingAddress { get; set; }
+        public virtual CreditCard CreditCard { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual RiskData RiskData { get; set; }
 
         public CreditCardVerification(NodeWrapper node, IBraintreeGateway gateway)
         {

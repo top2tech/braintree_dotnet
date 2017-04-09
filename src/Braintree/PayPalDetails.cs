@@ -4,24 +4,24 @@ namespace Braintree
 {
     public class PayPalDetails
     {
-        public virtual string PayerEmail { get; protected set; }
-        public virtual string PaymentId { get; protected set; }
-        public virtual string AuthorizationId { get; protected set; }
-        public virtual string Token { get; protected set; }
-        public virtual string ImageUrl { get; protected set; }
-        public virtual string DebugId { get; protected set; }
-        public virtual string PayeeEmail { get; protected set; }
-        public virtual string CustomField { get; protected set; }
-        public virtual string PayerId { get; protected set; }
-        public virtual string PayerFirstName { get; protected set; }
-        public virtual string PayerLastName { get; protected set; }
-        public virtual string PayerStatus { get; protected set; }
-        public virtual string SellerProtectionStatus { get; protected set; }
-        public virtual string CaptureId { get; protected set; }
-        public virtual string RefundId { get; protected set; }
-        public virtual string TransactionFeeAmount { get; protected set; }
-        public virtual string TransactionFeeCurrencyIsoCode { get; protected set; }
-        public virtual string Description { get; protected set; }
+        public virtual string PayerEmail { get; set; }
+        public virtual string PaymentId { get; set; }
+        public virtual string AuthorizationId { get; set; }
+        public virtual string Token { get; set; }
+        public virtual string ImageUrl { get; set; }
+        public virtual string DebugId { get; set; }
+        public virtual string PayeeEmail { get; set; }
+        public virtual string CustomField { get; set; }
+        public virtual string PayerId { get; set; }
+        public virtual string PayerFirstName { get; set; }
+        public virtual string PayerLastName { get; set; }
+        public virtual string PayerStatus { get; set; }
+        public virtual string SellerProtectionStatus { get; set; }
+        public virtual string CaptureId { get; set; }
+        public virtual string RefundId { get; set; }
+        public virtual string TransactionFeeAmount { get; set; }
+        public virtual string TransactionFeeCurrencyIsoCode { get; set; }
+        public virtual string Description { get; set; }
 
         protected internal PayPalDetails(NodeWrapper node)
         {

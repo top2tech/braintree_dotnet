@@ -4,14 +4,14 @@ namespace Braintree
 {
     public class ApplePayDetails
     {
-        public virtual string CardType { get; protected set; }
-        public virtual string PaymentInstrumentName { get; protected set; }
-        public virtual string SourceDescription { get; protected set; }
-        public virtual string CardholderName { get; protected set; }
-        public virtual string ExpirationMonth { get; protected set; }
-        public virtual string ExpirationYear { get; protected set; }
-        public virtual string Token { get; protected set; }
-        public virtual string LastFour { get; protected set; }
+        public virtual string CardType { get; set; }
+        public virtual string PaymentInstrumentName { get; set; }
+        public virtual string SourceDescription { get; set; }
+        public virtual string CardholderName { get; set; }
+        public virtual string ExpirationMonth { get; set; }
+        public virtual string ExpirationYear { get; set; }
+        public virtual string Token { get; set; }
+        public virtual string LastFour { get; set; }
 
         protected internal ApplePayDetails(NodeWrapper node)
         {

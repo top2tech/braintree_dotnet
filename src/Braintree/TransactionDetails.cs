@@ -4,8 +4,8 @@ namespace Braintree
 {
     public class TransactionDetails
     {
-        public virtual string Id { get; protected set; }
-        public virtual string Amount { get; protected set; }
+        public virtual string Id { get; set; }
+        public virtual string Amount { get; set; }
 
         protected internal TransactionDetails(NodeWrapper node)
         {

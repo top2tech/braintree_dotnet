@@ -6,18 +6,18 @@ namespace Braintree
 {
     public class Modification
     {
-        public virtual decimal? Amount { get; protected set; }
-        public virtual DateTime? CreatedAt { get; protected set; }
-        public virtual int? CurrentBillingCycle { get; protected set; }
-        public virtual string Description { get; protected set; }
-        public virtual string Id { get; protected set; }
-        public virtual string Kind { get; protected set; }
-        public virtual string MerchantId { get; protected set; }
-        public virtual string Name { get; protected set; }
-        public virtual bool? NeverExpires { get; protected set; }
-        public virtual int? NumberOfBillingCycles { get; protected set; }
-        public virtual int? Quantity { get; protected set; }
-        public virtual DateTime? UpdatedAt { get; protected set; }
+        public virtual decimal? Amount { get; set; }
+        public virtual DateTime? CreatedAt { get; set; }
+        public virtual int? CurrentBillingCycle { get; set; }
+        public virtual string Description { get; set; }
+        public virtual string Id { get; set; }
+        public virtual string Kind { get; set; }
+        public virtual string MerchantId { get; set; }
+        public virtual string Name { get; set; }
+        public virtual bool? NeverExpires { get; set; }
+        public virtual int? NumberOfBillingCycles { get; set; }
+        public virtual int? Quantity { get; set; }
+        public virtual DateTime? UpdatedAt { get; set; }
 
         protected Modification(NodeWrapper node)
         {

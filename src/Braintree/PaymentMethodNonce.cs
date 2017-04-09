@@ -4,9 +4,9 @@ namespace Braintree
 {
     public class PaymentMethodNonce
     {
-        public virtual string Nonce { get; protected set; }
-        public virtual string Type { get; protected set; }
-        public virtual ThreeDSecureInfo ThreeDSecureInfo { get; protected set; }
+        public virtual string Nonce { get; set; }
+        public virtual string Type { get; set; }
+        public virtual ThreeDSecureInfo ThreeDSecureInfo { get; set; }
 
         protected internal PaymentMethodNonce(NodeWrapper node, IBraintreeGateway gateway)
         {

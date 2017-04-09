@@ -5,15 +5,15 @@ namespace Braintree
 {
     public class Disbursement
     {
-        public virtual string Id { get; protected set; }
-        public virtual decimal? Amount { get; protected set; }
-        public virtual string ExceptionMessage { get; protected set; }
-        public virtual DateTime? DisbursementDate { get; protected set; }
-        public virtual string FollowUpAction { get; protected set; }
-        public virtual MerchantAccount MerchantAccount { get; protected set; }
-        public virtual List<string> TransactionIds { get; protected set; }
-        public virtual bool? Success { get; protected set; }
-        public virtual bool? Retry { get; protected set; }
+        public virtual string Id { get; set; }
+        public virtual decimal? Amount { get; set; }
+        public virtual string ExceptionMessage { get; set; }
+        public virtual DateTime? DisbursementDate { get; set; }
+        public virtual string FollowUpAction { get; set; }
+        public virtual MerchantAccount MerchantAccount { get; set; }
+        public virtual List<string> TransactionIds { get; set; }
+        public virtual bool? Success { get; set; }
+        public virtual bool? Retry { get; set; }
 
         private IBraintreeGateway gateway;
 

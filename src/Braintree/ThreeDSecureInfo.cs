@@ -4,10 +4,10 @@ namespace Braintree
 {
     public class ThreeDSecureInfo
     {
-        public virtual string Status { get; protected set; }
-        public virtual string Enrolled { get; protected set; }
-        public virtual bool? LiabilityShifted { get; protected set; }
-        public virtual bool? LiabilityShiftPossible { get; protected set; }
+        public virtual string Status { get; set; }
+        public virtual string Enrolled { get; set; }
+        public virtual bool? LiabilityShifted { get; set; }
+        public virtual bool? LiabilityShiftPossible { get; set; }
 
         public ThreeDSecureInfo(NodeWrapper node)
         {
